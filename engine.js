@@ -72,11 +72,34 @@
     [/MOONPIG|FUNKY PIGEON|CARD FACTORY|PAPERCHASE|INTERFLORA|FLORIST|FLOWER|\bBLOOM|SCRIBBLER|THORNTONS|HOTEL CHOCOLAT/, 'gifts'],
     [/CHARITY|OXFAM|CANCER RESEARCH|BRITISH HEART|RSPCA|UNICEF|JUST ?GIVING|RED CROSS|MACMILLAN|MARIE CURIE|SAVE THE CHILDREN|AGE UK|SHELTER|BARNARDO|NSPCC|\bWWF\b|GREENPEACE|SAMARITANS|DOGS TRUST|CATS PROTECTION|GOFUNDME|HOSPICE/, 'charity'],
     [/\bLOAN\b|\bZOPA\b|FINANCE\b|KLARNA|CLEARPAY|LAYBUY|PAYPAL CREDIT|PAY IN 3|NEWDAY|VANQUIS|STUDENT LOAN/, 'debt'],
+    // ---- more common UK names
+    [/JOE (&|AND) THE JUICE|CAFFE NERO|CAFE NERO|COSTA COFFEE|STARBUCKS|WILD BEAN|BLACK SHEEP|CAFFE CONCERTO|DEPARTMENT OF COFFEE|SODA ?BREAD|PRET A MANGER|EAT\.? ?LTD|ITSU|TORTILLA|POD FOOD|CHOPSTIX|BAGUETTE|GREGGS|BURGER & LOBSTER|OLIVER'?S/, 'cafe'],
+    [/HONEST|BYRON|GBK|GOURMET BURGER|WAHACA|COMPTOIR|ROSA'?S THAI|GIRAFFE|CARLUCCIO|BILL'?S RESTAURANT|BRASSERIE|PIZZA HUT|PIZZA EXPRESS|FRANKIE|BURGER|STEAK|SUSHI|KITCHEN|TAPAS|NOODLE|DIM SUM|RAMEN|CURRY|TANDOORI|MASALA|GRILL|BISTRO|TRATTORIA|OSTERIA|PIZZERIA|RESTAURANT/, 'dinners'],
+    [/WINE|BREWERY|BREWING|TAPROOM|\bPUB\b|\bBAR\b|\bINN\b|\bARMS\b|TAVERN|ALE HOUSE|COCKTAIL|SPOONS|DISTILLERY|OFF LICEN|MAJESTIC|LAITHWAITE|VIRGIN WINES|NAKED WINES/, 'drinks'],
+    [/UBER\s*\*?\s*TRIP|\bUBER\b|BOLT\.EU|\bBOLT\b|ADDISON LEE|GETT|FREENOW|FREE NOW|VERIDIAN|DELTA TAXIS|CITY CARS/, 'taxis'],
+    [/TFL TRAVEL|TFL\.GOV|OYSTER|CONTACTLESS TRAVEL|NATIONAL EXPRESS|MEGABUS|FLIXBUS|CITYLINK|SANTANDER CYCLES|\bLIME\b|\bVOI\b|\bTIER\b|FORWARD DROP|DOTT|HUMAN FORGE|\bBUS\b|METRO|TRAM|SUPERTRAM|MERSEYTRAVEL|TRANSLINK|TRAVEL ?CARD/, 'commute'],
+    [/TRAINLINE|SPLIT ?MY ?FARE|TRAINPAL|RAILCARD|LNER|AVANTI|GWR|CROSSCOUNTRY|SCOTRAIL|SOUTHEASTERN|NORTHERN TRAINS|TRANSPORT FOR WALES|TFW|C2C|THAMESLINK|SOUTHERN|GATWICK EXPRESS|HEATHROW EXPRESS|STANSTED EXPRESS|ELIZABETH LINE|EUROSTAR/, 'travel', { rail: true }],
+    [/PREMIER ?INN|TRAVELODGE|HILTON|MARRIOTT|HOLIDAY INN|IBIS|NOVOTEL|MERCURE|RADISSON|HOTEL|HOTELS\.COM|BOOKING\.COM|EXPEDIA|AIRBNB|VRBO|SYKES|CENTER ?PARCS|HAVEN|BUTLINS|EASYJET|RYANAIR|JET ?2|BRITISH AIRWAYS|\bBA\.COM|VIRGIN ATLANTIC|WIZZ|LOGANAIR|LOVEHOLIDAYS|ON THE BEACH|TUI|AIRPORT|DUTY ?FREE|WORLD DUTY|HERTZ|AVIS|ENTERPRISE RENT|EUROPCAR|SIXT/, 'travel'],
+    [/ESSO|\bSHELL\b|\bBP\b|TEXACO|GULF|JET PETROL|SAINSBURYS PETROL|TESCO PFS|ASDA PETROL|MORRISONS PETROL|MFG|EG GROUP|RONTEC|\bPFS\b|PETROL|FILLING STATION|SERVICE STATION|MOTO\b|WELCOME BREAK|ROADCHEF|EXTRA MSA|JUSTPARK|RINGGO|PAYBYPHONE|APCOA|EUROPARK|NCP|Q-?PARK|PARKING|DART ?CHARGE|CONGESTION|ULEZ|DVLA|MOT\b|KWIK|HALFORDS|NATIONAL TYRES|TESLA|GRIDSERVE|BP PULSE|OSPREY|INSTAVOLT|PODPOINT|POD POINT|ZAPMAP/, 'car'],
+    [/TESCO|SAINSBURY|SAINSBURYS|ASDA|MORRISONS|WAITROSE|M&S FOOD|M ?& ?S SIMPLY|MARKS (&|AND) SPENCER FOOD|\bALDI\b|\bLIDL\b|CO-?OP|COOP|ICELAND|OCADO|IOCADO|FARMFOODS|\bSPAR\b|\bNISA\b|ONE STOP|PREMIER STORES|COSTCUTTER|LONDIS|BOOKER|COSTCO|MAKRO|WHOLE ?FOODS|PLANET ORGANIC|AS NATURE INTENDED|BUDGENS|CENTRA|MCCOLL|HELLO ?FRESH|GOUSTO|MINDFUL CHEF|ABEL (&|AND) COLE|RIVERFORD|MILK ?& ?MORE|ZAPP|GETIR|DELIVEROO HOP|AMAZON FRESH|BUTCHER|GREENGROCER|FISHMONGER|FARM SHOP|BAKER/, 'shop'],
+    [/DELIVEROO|JUST ?EAT|UBER ?EATS|DOMINO|PAPA ?JOHN|PIZZA HUT DELIVERY|KFC|MCDONALD|BURGER KING|FIVE GUYS|WINGSTOP|POPEYES|TACO BELL|SUBWAY|CHIPPY|FISH (&|AND) CHIPS|KEBAB|TAKEAWAY|CHINESE|DOORDASH/, 'takeaway'],
+    [/NETFLIX|SPOTIFY|DISNEY|AMAZON PRIME|PRIME VIDEO|AUDIBLE|KINDLE|APPLE\.COM|APPLE SERVICES|ITUNES|ICLOUD|GOOGLE ONE|GOOGLE STORAGE|GOOGLE \*|YOUTUBE|NOW ?TV|NOW ENTERTAINMENT|PARAMOUNT|BRITBOX|DAZN|TNT SPORTS|DISCOVERY|PLAYSTATION|\bPSN\b|XBOX|MICROSOFT|STEAM|NINTENDO|PATREON|SUBSTACK|MEDIUM|ADOBE|CANVA|DROPBOX|OPENAI|CHATGPT|CLAUDE|ANTHROPIC|NOTION|LINKEDIN|DUOLINGO|HEADSPACE|CALM|STRAVA|PELOTON|ZWIFT|FITBIT|WHOOP|NYTIMES|NEW YORK TIMES|TIMES NEWSPAPERS|TELEGRAPH|GUARDIAN|ECONOMIST|FT\.COM|FINANCIAL TIMES|SPECTATOR|PRIVATE EYE|READLY|SCRIBD|EVERAND|TIDAL|DEEZER|SOUNDCLOUD|1PASSWORD|LASTPASS|NORDVPN|EXPRESSVPN|SURFSHARK|GITHUB|CURSOR|SQUARESPACE|WIX|GODADDY|IONOS|MEMBERSHIP|SUBSCRIPTION/, 'subs'],
+    [/OCTOPUS|BRITISH GAS|EDF|E\.?ON|OVO|SCOTTISH ?POWER|\bSSE\b|SO ENERGY|UTILITA|OUTFOX|SHELL ENERGY|BULB|COUNCIL|C ?TAX|WATER|SEVERN TRENT|ANGLIAN|UNITED UTILITIES|YORKSHIRE WATER|WESSEX|SOUTHERN WATER|AFFINITY|BT\b|BT GROUP|\bSKY\b|VIRGIN MEDIA|TALKTALK|PLUSNET|HYPEROPTIC|COMMUNITY FIBRE|VODAFONE|\bEE\b|\bO2\b|TELEFONICA|THREE|H3G|GIFFGAFF|TESCO MOBILE|ID MOBILE|SMARTY|LEBARA|VOXI|LYCA|TV LICEN|TVL|LANDLORD|SERVICE CHARGE|GROUND RENT/, 'bills'],
+    [/AVIVA|DIRECT LINE|ADMIRAL|CHURCHILL|HASTINGS|LV=|LIVERPOOL VICTORIA|AXA|ZURICH|ALLIANZ|AGEAS|ESURE|SHEILAS|ELEPHANT|MORE ?TH(A|E)N|RAC INSURANCE|AA INSURANCE|SAGA|VITALITY|BUPA|AXA HEALTH|SIMPLYHEALTH|PETPLAN|ANIMAL FRIENDS|LEGAL (&|AND) GENERAL|L&G|ROYAL LONDON|SCOTTISH WIDOWS|AEGON|PRUDENTIAL|BRITISH FRIENDLY|INSURANCE|ASSURANCE|POLICY/, 'insurance'],
+    [/BOOTS|SUPERDRUG|SAVERS|LUSH|SPACE NK|SEPHORA|CULT BEAUTY|LOOKFANTASTIC|BEAUTY|SALON|HAIR|BARBER|NAILS|SPA\b|BROWS|LASH|AESOP|KIEHL|CLINIQUE|ESTEE|CHARLOTTE TILBURY|BENEFIT|MAC COSMETICS|THE ORDINARY|DECIEM|NEALS YARD|ELEMIS|TREATWELL|FRESHA|BOOKSY|PERFUME|FRAGRANCE|THE FRAGRANCE SHOP|ALLBEAUTY|FEELUNIQUE/, 'care'],
+    [/PURE ?GYM|THE GYM|DAVID LLOYD|NUFFIELD|VIRGIN ACTIVE|BANNATYNE|ANYTIME FITNESS|EVERYONE ACTIVE|BETTER GYM|GLL|FITNESS FIRST|THIRD SPACE|BARRY'?S|F45|ORANGETHEORY|SOULCYCLE|YOGA|PILATES|CLASSPASS|GYMPASS|PARKRUN|LEISURE|SPORTS CENTRE|SWIM|PHARMACY|CHEMIST|LLOYDS PHARMACY|WELL PHARMACY|DENTAL|DENTIST|ORTHODONT|OPTICIAN|SPECSAVERS|VISION EXPRESS|BOOTS OPTICIANS|PHYSIO|OSTEO|CHIRO|CLINIC|GP\b|DOCTOR|MEDICAL|NHS|PRESCRIPTION|HOLLAND (&|AND) BARRETT|MYPROTEIN|DECATHLON|SWEATY BETTY|SPORTS DIRECT|JD SPORTS|RUNNERS NEED|SIGMA SPORTS|WIGGLE|EVANS CYCLES|GO OUTDOORS|COTSWOLD OUTDOOR|MOUNTAIN WAREHOUSE/, 'health'],
+    [/H ?& ?M|ZARA|UNIQLO|PRIMARK|NEXT\b|NEXT RETAIL|RIVER ISLAND|NEW LOOK|TOPSHOP|TOPMAN|ASOS|BOOHOO|PRETTYLITTLETHING|SHEIN|MANGO|COS\b|ARKET|& OTHER STORIES|OTHER STORIES|WEEKDAY|MONKI|URBAN OUTFITTERS|ANTHROPOLOGIE|FREE PEOPLE|WHISTLES|REISS|HOBBS|JIGSAW|L\.?K\.? ?BENNETT|KAREN MILLEN|PHASE EIGHT|MONSOON|WHITE STUFF|FAT ?FACE|SEASALT|JOULES|BODEN|TOAST\b|ME ?\+ ?EM|MINT VELVET|HUSH|SUPERDRY|JACK WILLS|GAP\b|LEVI|DR MARTENS|CLARKS|SCHUH|OFFICE SHOES|KURT GEIGER|DUNE|RUSSELL (&|AND) BROMLEY|SKECHERS|VANS|CONVERSE|NIKE|ADIDAS|NEW BALANCE|PUMA|LULULEMON|GYMSHARK|TK ?MAXX|TKMAXX|HOMESENSE|SELFRIDGES|HARVEY NICHOLS|LIBERTY|HARRODS|FENWICK|HOUSE OF FRASER|FLANNELS|END CLOTHING|MR PORTER|NET-?A-?PORTER|FARFETCH|VINTED|DEPOP|ZALANDO|MATCHES|MARKS (&|AND) SPENCER|M ?& ?S\b|JOHN LEWIS FASHION|SEASALT/, 'clothes'],
+    [/JOHN LEWIS|IKEA|DUNELM|HABITAT|HEALS|MADE\.COM|WAYFAIR|LA REDOUTE|OLIVER BONAS|THE WHITE COMPANY|LAKELAND|ROBERT DYAS|WILKO|B ?& ?Q|B&Q|WICKES|HOMEBASE|SCREWFIX|TOOLSTATION|TRAVIS PERKINS|JEWSON|DULUX|FARROW|GARDEN CENT|DOBBIES|HILLIER|WYEVALE|NOTCUTTS|SQUIRES|THOMPSON (&|AND) MORGAN|CROCUS|PETS AT HOME|JOLLYES|ZOOPLUS|BELLA (&|AND) DUKE|TAILS\.COM|BUTTERNUT BOX|LILY'?S KITCHEN|VETS|VETERINARY|ARGOS|CURRYS|AO\.COM|RICHER SOUNDS|MAPLIN|THE RANGE|B ?& ?M\b|HOME BARGAINS|POUNDLAND|POUNDSTRETCHER|SAVERS|WHSMITH|WH SMITH|RYMAN|HOBBYCRAFT|CLAS OHLSON|SOAK\.COM|NATURAL BED|EMMA MATTRESS|SIMBA|EVE SLEEP|SILENTNIGHT|DREAMS|BENSONS|SOFOLOGY|DFS|SCS\b|LOAF|SWOON|COX (&|AND) COX|ANTHROPOLOGIE HOME|CULT FURNITURE|NKUKU|DOWSING|NEPTUNE|SOFA/, 'homegarden'],
+    [/AMAZON|AMZN|AMZ\b|EBAY|ETSY|NOTONTHEHIGHSTREET|PAYPAL|KLARNA ONLINE|TEMU|ALIEXPRESS|WISH\.COM|VERY\.CO|LITTLEWOODS|ASOS\.COM|APPLE STORE|APPLE ONLINE|GOOGLE STORE|SAMSUNG|DYSON|SCAN COMPUTERS|OVERCLOCKERS|BACK MARKET|MUSIC MAGPIE|CEX\b|GAME\b|SMYTHS|THE ENTERTAINER|LEGO|HAMLEYS|BUY IT|ONLINE/, 'online'],
+    [/WATERSTONES|FOYLES|BLACKWELLS|BOOKSHOP|WORDERY|HIVE\.CO|ABEBOOKS|WORLD OF BOOKS|CINEMA|CINEWORLD|ODEON|VUE\b|CURZON|PICTUREHOUSE|EVERYMAN|SHOWCASE|TICKETMASTER|SEETICKETS|SEE TICKETS|EVENTBRITE|DICE\.FM|\bDICE\b|SKIDDLE|AXS|GIGANTIC|TICKETWEB|LIVE NATION|ATG TICKETS|LONDON THEATRE|NATIONAL THEATRE|BARBICAN|SOUTHBANK|ROYAL ALBERT|O2 ARENA|THEATRE|MUSEUM|GALLERY|TATE|V ?& ?A|NATIONAL TRUST|ENGLISH HERITAGE|HISTORIC|RHS|ZOO|AQUARIUM|BOWLING|ESCAPE ROOM|GOLF|CLIMB|TENNIS|PADEL|PLAYTOMIC|MATCHI|CLUBSPARK|FESTIVAL|STEAM GAMES|GAMESTOP/, 'hobbies'],
+    [/MOONPIG|FUNKY PIGEON|CARD FACTORY|CLINTONS|PAPERCHASE|SCRIBBLER|INTERFLORA|BLOOM ?& ?WILD|BLOOMON|PATCH PLANTS|FLORIST|FLOWERS|HOTEL CHOCOLAT|THORNTONS|LINDT|CHARBONNEL|NOT ON THE HIGH STREET|PRESENTS|GIFT/, 'gifts'],
+    [/JUSTGIVING|JUST GIVING|GOFUNDME|CHARITY|CHARITIES|OXFAM|BRITISH RED CROSS|RED CROSS|CANCER RESEARCH|MACMILLAN|MARIE CURIE|BRITISH HEART|RNLI|RSPCA|RSPB|DOGS TRUST|BATTERSEA|CATS PROTECTION|SAMARITANS|MIND\b|SHELTER|CRISIS|SAVE THE CHILDREN|UNICEF|NSPCC|BARNARDO|WATERAID|ACTIONAID|AMNESTY|GREENPEACE|WWF|FRIENDS OF THE EARTH|AGE UK|ALZHEIMER|DONATION|HOSPICE/, 'charity'],
+    [/KLARNA|CLEARPAY|LAYBUY|PAYPAL PAY IN|PAYPAL CREDIT|ZILCH|OPEN ?PAY|LOAN|FINANCE|HIRE PURCHASE|ZOPA|NOVUNA|BLACK HORSE|SANTANDER CONSUMER|MOTONOVO|CLOSE BROTHERS|STUDENT LOANS|SLC\b|AMERICAN EXPRESS|AMEX|BARCLAYCARD|MBNA|CAPITAL ONE|VANQUIS|AQUA CARD|MARBLES|NEWDAY|TESCO BANK CC|HSBC CREDIT|LLOYDS CREDIT|HALIFAX CREDIT|NATWEST CREDIT|CREDIT CARD/, 'debt'],
     [/INTEREST|LATE PAYMENT|OVERLIMIT|\bFEES?\b|\bCHARGES?\b|NON-?STERLING|COMMISSION|OVERDRAFT/, 'interest']
   ];
 
   // Keyword hints for independent places that aren't in any list
-  const KW_CAFE = /\bCAF[EÉ]S?\b|COFFEE|ESPRESSO|BAKERY|BAKEHOUSE|\bBAKES?\b|PATISSERIE|PASTRY|PASTELARIA|\bDELI\b|DELICATESSEN|ROASTERS?|ROASTERY|\bBREW\b|\bBEANS?\b|PANTRY|CANTEEN|SANDWICH|BAGEL|TEA ?ROOM|JUICE|BRUNCH|LARDER|BOULANGERIE|KAFFE|KOFFEE/;
+  const KW_CAFE = /\bCAF[EÉ]S?\b|\bCAFFE\b|COFFEE|ESPRESSO|BAKERY|BAKEHOUSE|PATISSERIE|PASTELARIA|\bDELI\b|DELICATESSEN|ROASTERS?\b|ROASTERY|SANDWICH|BAGEL|TEA ?ROOM|BOULANGERIE/;
   const KW_DINNER = /RESTAURANT|RISTORANTE|TRATTORIA|OSTERIA|PIZZ|BISTRO|BRASSERIE|\bGRILL\b|KITCHEN|\bDINER\b|SUSHI|RAMEN|\bTHAI\b|INDIAN|CURRY|TANDOORI|MASALA|TAPAS|\bMEZE|TAVERNA|TABERNA|STEAK|SEAFOOD|OYSTER|NOODLE|CANTINA|TAQUERIA|BURGER|EATERY|DINING|SMOKEHOUSE|CHOPHOUSE|DIM SUM|\bWOK\b|\bBBQ\b/;
   const KW_DRINKS = /\bPUB\b|\bBAR\b|\bINN\b|\bARMS\b|TAVERN|\bTAP\b|TAPROOM|BREWERY|BREWING|\bWINE|COCKTAIL|SPEAKEASY|ALE ?HOUSE|DISTILLERY|BOTTLE SHOP|CELLARS?\b|VAULTS?\b/;
   const KW_SHOP = /BOUTIQUE|EMPORIUM|STUDIO|GALLERY|VINTAGE|INTERIORS|HOMEWARE|MARKET|\bSTORE\b|\bSHOP\b|& CO\b|AND CO\b|CERAMIC|POTTERY|STATIONERY|PAPER|THREAD|WORKSHOP|MAKERS|CRAFT|ANTIQUE|TRADING|SUPPLY|GOODS|COLLECTIVE|ATELIER|JEWEL/;
@@ -94,10 +117,40 @@
   const MCC_MAP = {};
   MCC.forEach(([codes, cat, extra]) => codes.forEach(c => { MCC_MAP[c] = [cat, extra]; }));
 
+  // Categories some banks include in their exports (Monzo, Starling, Barclays, Revolut…), lower-cased with _ for spaces
+  const BANK_CATS = {
+    groceries: 'shop', grocery: 'shop', supermarkets: 'shop', food_groceries: 'shop',
+    eating_out: 'dinners', restaurants: 'dinners', dining: 'dinners', restaurants_cafes: 'dinners', food_drink: 'dinners', coffee: 'cafe', cafes: 'cafe', takeaway: 'takeaway', takeaways: 'takeaway', pubs_bars: 'drinks', bars: 'drinks',
+    transport: 'travel', travel: 'travel', public_transport: 'commute', commuting: 'commute', taxi: 'taxis', taxis: 'taxis', fuel: 'car', car: 'car', motoring: 'car', parking: 'car',
+    holidays: 'travel', holiday: 'travel', hotels: 'travel', lodging: 'travel', flights: 'travel',
+    bills: 'bills', utilities: 'bills', household_bills: 'bills', energy: 'bills', phone: 'bills', internet: 'bills', council_tax: 'bills',
+    mortgage: 'mortgage', rent: 'mortgage', housing: 'mortgage', home: 'homegarden', household: 'homegarden', diy: 'homegarden', garden: 'homegarden',
+    insurance: 'insurance', shopping: 'online', general_shopping: 'online', clothing: 'clothes', clothes: 'clothes', fashion: 'clothes',
+    entertainment: 'hobbies', leisure: 'hobbies', hobbies: 'hobbies', culture: 'hobbies', books: 'hobbies',
+    personal_care: 'care', beauty: 'care', health_beauty: 'care', health: 'health', fitness: 'health', healthcare: 'health', medical: 'health', wellbeing: 'health',
+    subscriptions: 'subs', digital: 'subs', streaming: 'subs', gifts: 'gifts', charity: 'charity', donations: 'charity',
+    cash: 'cash', atm: 'cash', family: 'people', friends: 'people', debt: 'debt', loans: 'debt', debt_repayments: 'debt', fees: 'interest', bank_charges: 'interest',
+    monthly_bills: 'bills', trips: 'travel', shopping_gifts: 'online', gifts_shopping: 'online'
+  };
+
+  // Wording banks add around the merchant name: "CARD PAYMENT TO TESCO ON 12/03", "))) PRET A MANGER", "TESCO STORES CD 1234"
+  const PREFIXES = [
+    [/^(CARD PAYMENT( TO)?|CARD PURCHASE|DEBIT CARD (PAYMENT|PURCHASE)?|CONTACTLESS( PAYMENT)?|POS( PURCHASE)?|PURCHASE|VIS|DEB|CLP|APPLE PAY|GOOGLE PAY|\){2,3})\s+/i, ''],
+    [/^(DIRECT DEBIT( PAYMENT)?( TO)?|DD)\s+/i, 'DIRECT DEBIT'],
+    [/^(STANDING ORDER( TO)?|S\/O)\s+/i, "STANDING ORDER"],
+    [/^(FASTER PAYMENTS?( OUT| SENT)?( TO)?|FPS?( OUT)?|BILL PAYMENT( TO)?|BANK TRANSFER( TO)?|TRANSFER( TO)?|ONLINE PAYMENT( TO)?|MOBILE PAYMENT( TO)?|PAYMENT TO|TFR( TO)?)\s+/i, 'TRANSFER']
+  ];
+  const SUFFIXES = /(\s+(ON|VIA)\s+\d{1,2}[\s\/\-]\w{2,3}([\s\/\-]\d{2,4})?.*$)|(\s+CD\s*\d{4}.*$)|(\s+VIA APPLE PAY.*$)|(\s+VIA GOOGLE PAY.*$)|(\s+(CLP|BCC|CPM|BGC|DEB|POS)\b.*$)|(\s+\d{2}\/\d{2}(\/\d{2,4})?\b.*$)/i;
+
   const CARDPAY = /VIRGIN MONEY|CREDIT ?CARD|\bCC\b|CARD PAYMENT|BARCLAYCARD|\bMBNA\b|\bAMEX\b|AMERICAN EXPRESS|CAPITAL ONE|NEWDAY|VANQUIS|TESCO BANK|MONEYBARN|\bAQUA\b|MARBLES|\bFLUID\b/;
   const TRANSFERISH = /PAYMENT|THANK|\bTFR\b|TRANSFER|\bCC\b|CARD|VIRGIN|SAVINGS|\bFROM\b|\bTO\b|DIRECT DEBIT|REPAY/;
   const SAVINGS = /SAVINGS|\bISA\b|SAVER\b|PREMIUM BONDS|NS ?& ?I|MONEYBOX|NUTMEG|VANGUARD|HARGREAVES|AJ BELL|PENSION/;
-  const PERSON_TYPES = /^(DPC|BAC|TFR|FPO|FP|OBP|BP|S\/O|SO|STO|IBP|PAY|ITL)$/i;
+  const POTS = /POT TRANSFER|\bPOT\b|SAVINGS POT|SAVING SPACE|\bSPACE\b.*TRANSFER|ROUND ?UPS?\b|SAVE THE CHANGE|VAULT/i;
+  // Payment-type words banks put in a Type column or at the start of a description
+  const T_DD = /^(D\/D|DD|DDR)$|DIRECT[ _]?DEBIT/i;
+  const T_SO = /^(S\/O|SO|STO)$|STANDING[ _]?ORDER/i;
+  const PERSON_TYPES = /^(DPC|BAC|TFR|FPO|FP|OBP|BP|IBP|PAY|ITL)$|FASTER|BANK[ _]TRANSFER|TRANSFER|PAYMENT[ _]OUT|BILL[ _]PAYMENT|ONLINE[ _]PAYMENT|MOBILE[ _]PAYMENT|MONZO-TO-MONZO|^P2P$|^S\/O$|^SO$|^STO$|STANDING[ _]?ORDER/i;
+  const T_CARD = /CARD|POS|CONTACTLESS|DEBIT[ _]CARD|^DEB$|^VIS$|PURCHASE|APPLE[ _]PAY|GOOGLE[ _]PAY/i;
   const BIZ = /\b(LTD|LIMITED|PLC|LLP|CO|COMPANY|SERVICES|GROUP|UK|INTERNATIONAL|TRADING|STORE|SHOP|CAFE|BANK|COUNCIL|ENERGY|INSURANCE|SAVINGS|CARD|CC|LOAN|MORTGAGE|SALARY|PAYMENT|HMRC|DVLA|SCHOOL|CLUB|CHURCH|TRUST|SOLUTIONS|HOLDINGS|PROPERTY|MANAGEMENT|HOUSING|HOME|HOMES)\b/;
 
   // ---------- Small helpers ----------
@@ -169,7 +222,9 @@
       const find = res => { for (const re of res) { const i = hdr.findIndex(x => re.test(x)); if (i >= 0) return i; } return -1; };
       const date = find([/^transaction date$/, /^trans(action)?\.? ?date/, /^date$/, /date/]);
       if (date < 0) continue;
-      const desc = find([/^description$/, /^merchant( name)?$/, /^(transaction )?details$/, /description|narrative|payee|merchant|particulars|memo|^name$|^transaction$/, /reference/]);
+      // Prefer a clean merchant/payee name column (Monzo "Name", Starling "Counter Party") over a raw description
+      const desc = find([/^merchant( name)?$/, /^counter ?party$/, /^payee( name)?$/, /^name$/, /^description$/, /transaction description/, /^(transaction )?details$/, /description|narrative|payee|merchant|counterparty|particulars|memo|^transaction$/, /reference/]);
+      const bankCat = find([/^category$/, /spending category/, /^sub-?category$/, /category/]);
       const debit = find([/paid out|money out|debit amount|^debits?$|withdrawals?|^out$|^spent$/]);
       const credit = find([/paid in|money in|credit amount|^credits?$|deposits?|^in$|^received$/]);
       let amount = find([/^amount$/, /^billing amount$/, /^value$/, /^amount ?\(gbp\)$/, /amount|value/]);
@@ -185,7 +240,7 @@
         const vals = rows.slice(h + 1, h + 30).map(r => (r[type] || '').trim().toUpperCase()).filter(Boolean);
         if (vals.length && vals.every(v => /^(DEBIT|CREDIT|DBIT|CRDT|DR|CR|D|C)$/.test(v))) dc = type;
       }
-      return { header: h, date, desc, amount, debit, credit, dc, type: type === dc ? -1 : type, town, mcc, acct };
+      return { header: h, date, desc, amount, debit, credit, dc, type: type === dc ? -1 : type, town, mcc, acct, bankCat: bankCat === desc ? -1 : bankCat, time: hdr.findIndex(x => /^(transaction )?time$/.test(x)), raw: (() => { const r = hdr.findIndex(x => /^description$|transaction description/.test(x)); return r === desc ? -1 : r; })() };
     }
     return null;
   }
@@ -231,6 +286,9 @@
       merch = merch.slice(0, m.index);
     }
     merch = merch.replace(/\s+/g, ' ').trim();
+    let ptype = '';
+    for (const [re, ty] of PREFIXES) { if (re.test(merch)) { merch = merch.replace(re, ''); if (ty) ptype = ty; break; } }
+    merch = merch.replace(SUFFIXES, '').trim() || merch;
     const indie = INDIE_PROC.test(merch);
     merch = merch.replace(PROC, '');
     merch = merch.replace(/\s\b(REF|REFERENCE|FP|BGC|DDR)\b[\s:.].*$/i, '').replace(/\s+\d{2}\/\d{2}\/\d{2,4}.*$/, '');
@@ -240,7 +298,7 @@
       .replace(/\s+/g, ' ').trim().toUpperCase();
     if (/\d|\.COM|\.CO|WWW|HTTP/i.test(town) || town.length < 3) town = '';
     const mu = display.toUpperCase();
-    return { merch: titleCase(display), mu, key: keyOf(display), town, tdate, indie };
+    return { merch: titleCase(display), mu, key: keyOf(display), town, tdate, indie, ptype };
   }
 
   // ---------- Import ----------
@@ -270,11 +328,16 @@
         else if (hasSuffix) o = p.a.cr ? -Math.abs(p.a.n) : Math.abs(p.a.n);
         else o = -p.a.n; // most banks: negative = money out
       } else o = (p.d ? Math.abs(p.d.n) : 0) - (p.c ? Math.abs(p.c.n) : 0);
+      // When the clean name came from a Name column, the raw description still holds the town and card-reader prefix
+      const rawDesc = map.raw >= 0 ? String(p.r[map.raw] || '').trim() : '';
       const cl = cleanDesc(p.desc, map.town >= 0 ? p.r[map.town] : '');
+      if (rawDesc) { const c2 = cleanDesc(rawDesc, ''); cl.town = cl.town || c2.town; cl.indie = cl.indie || c2.indie; cl.ptype = cl.ptype || c2.ptype; if (!p.desc) { Object.assign(cl, c2); } }
       const mccN = map.mcc >= 0 ? parseInt(p.r[map.mcc], 10) : NaN;
       return {
-        d: p.date, td: cl.tdate, desc: p.desc, merch: cl.merch, mu: cl.mu, key: cl.key, town: cl.town, indie: cl.indie,
-        type: map.type >= 0 ? (p.r[map.type] || '').trim().replace(/^'/, '') : '', mcc: isFinite(mccN) ? mccN : null,
+        d: p.date, td: cl.tdate, desc: rawDesc && p.desc ? p.desc + ' · ' + rawDesc : (p.desc || rawDesc), merch: cl.merch, mu: cl.mu, key: cl.key, town: cl.town, indie: cl.indie,
+        type: (map.type >= 0 ? (p.r[map.type] || '').trim().replace(/^'/, '') : '') || cl.ptype, mcc: isFinite(mccN) ? mccN : null,
+        bankCat: map.bankCat >= 0 ? String(p.r[map.bankCat] || '').trim().toLowerCase().replace(/[^a-z]+/g, '_').replace(/^_|_$/g, '') : '',
+        hr: map.time >= 0 ? parseInt(String(p.r[map.time] || '').slice(0, 2), 10) : null,
         o: Math.round(o * 100) / 100
       };
     }).filter(t => t.o !== 0);
@@ -303,20 +366,22 @@
     const m = t.mu;
     const w = dow(t.d), weekday = w >= 1 && w <= 5;
     const amt = Math.abs(t.out);
-    const lunchy = c => (c === 'dinners' && weekday && amt <= 14 ? 'cafe' : c);
+    const lunchTime = t.hr == null || isNaN(t.hr) || (t.hr >= 7 && t.hr < 15);
+    const lunchy = c => (c === 'dinners' && weekday && amt <= 15 && lunchTime ? 'cafe' : c === 'dinners' && t.hr >= 17 && amt <= 20 ? 'drinks' : c);
     for (const [re, cat, extra] of RULES) if (re.test(m)) return Object.assign({ cat: lunchy(cat), conf: 'rule' }, extra || {});
     if (t.mcc && MCC_MAP[t.mcc]) { const [cat, extra] = MCC_MAP[t.mcc]; return Object.assign({ cat: lunchy(cat), conf: 'rule' }, extra || {}); }
+    if (t.bankCat && BANK_CATS[t.bankCat]) return { cat: lunchy(BANK_CATS[t.bankCat]), conf: 'guess' };
     if (KW_CAFE.test(m)) return { cat: 'cafe', conf: 'guess' };
     if (KW_DINNER.test(m)) return { cat: lunchy('dinners'), conf: 'guess' };
     if (KW_DRINKS.test(m)) return { cat: 'drinks', conf: 'guess' };
     if (KW_SHOP.test(m)) return { cat: 'indie', conf: 'guess' };
-    if (t.indie) return { cat: amt <= 14 ? 'cafe' : 'indie', conf: 'guess' };
-    const ptype = PERSON_TYPES.test(t.type || '');
-    const looksPerson = !BIZ.test(m) && (/^(MR|MRS|MS|MISS|DR)\.?\s+[A-Z]/.test(m) || /^[A-Z]{1,2}\.?\s+[A-Z][A-Z'\-]+$/.test(m) || (ptype && /^[A-Z][A-Z'\-]+\s+[A-Z][A-Z'\-]+$/.test(m)));
+    if (t.indie) return { cat: 'indie', conf: 'guess' };
+    const ty = t.type || '';
+    const ptype = PERSON_TYPES.test(ty) && !T_CARD.test(ty);
+    const looksPerson = !BIZ.test(m) && (/^(MR|MRS|MS|MISS|DR)\.?\s+[A-Z]/.test(m) || /^[A-Z]{1,2}\.?\s+[A-Z][A-Z'\-]+$/.test(m) || (ptype && /^[A-Z][A-Z'\-]+(\s+[A-Z][A-Z'\-]+){1,2}$/.test(m)));
     if (looksPerson) return { cat: 'people', conf: ptype ? 'rule' : 'guess' };
-    if (/^(D\/D|DD|DDR)$/i.test(t.type || '')) return { cat: 'bills', conf: 'guess' };
-    if (/^(S\/O|SO|STO)$/i.test(t.type || '')) return { cat: 'people', conf: 'guess' };
-    if (ptype) return { cat: 'people', conf: 'guess' };
+    if (T_DD.test(ty)) return { cat: 'bills', conf: 'guess' };
+    if (T_SO.test(ty) || ptype) return { cat: 'people', conf: 'guess' };
     return { cat: 'other', conf: 'none' };
   }
 
@@ -324,17 +389,25 @@
 
   function baseCategorise(t, hasCredit) {
     const U = t.mu + ' ' + t.desc.toUpperCase();
+    const ty = (t.type || '').toUpperCase();
+    // Monzo Flex works like a credit card: the purchase is counted where it happened, and moving it to Flex
+    // or paying instalments is just money moving between your own accounts
+    if (/^FLEX$/.test(ty)) return setCat(t, 'transfer', 'rule');
+    if (/OVERDRAFT/.test(ty) || /OVERDRAFT (FEE|CHARGE|INTEREST)/.test(U)) return setCat(t, 'interest', 'rule');
+    if (/^(SAVINGS|SAVINGS_INVESTMENTS|INVESTMENTS)$/i.test(t.bankCat || '')) return setCat(t, t.out > 0 ? 'savings' : 'transfer', 'rule');
+    if (t.out > 0 && /^MONZO_PAID$/.test(ty)) return setCat(t, 'subs', 'rule');
     if (t.out < 0) {
       if (t.kind === 'credit') {
         if (/PAYMENT|THANK ?YOU|DIRECT DEBIT|BALANCE TRANSFER/.test(U)) return setCat(t, 'transfer', 'rule');
         const g = guessSpend(t);
         return setCat(t, g.cat === 'people' ? 'other' : g.cat, g.conf, { refund: true });
       }
-      if (SAVINGS.test(U) || /TFR FROM|FROM A\/C|TRANSFER FROM/.test(U)) return setCat(t, 'transfer', 'rule');
+      if (POTS.test((t.type || '') + ' ' + U) || SAVINGS.test(U) || /TFR FROM|FROM A\/C|TRANSFER FROM/.test(U)) return setCat(t, 'transfer', 'rule');
       const g = guessSpend(t);
       if (g.conf === 'rule' && !['people', 'other', 'interest', 'bills'].includes(g.cat) && Math.abs(t.out) < 500) return setCat(t, g.cat, 'rule', { refund: true });
       return setCat(t, 'income', 'rule');
     }
+    if (POTS.test((t.type || '') + ' ' + U)) return setCat(t, 'savings', 'rule');
     if (SAVINGS.test(t.mu)) return setCat(t, 'savings', 'rule');
     if (t.kind === 'current' && CARDPAY.test(U)) return setCat(t, hasCredit ? 'transfer' : 'debt', 'rule');
     if (/^(C\/L|ATM|CSH|CASH)$/i.test(t.type || '') || (/\bCASH\b|\bATM\b|CASHPOINT/.test(t.mu) && !/CASHBACK/.test(t.mu))) return setCat(t, 'cash', 'rule');
@@ -371,7 +444,8 @@
   // The same independent place visited on lots of weekdays for small amounts is almost certainly lunch/coffee
   function lunchPass(T) {
     const g = {};
-    T.forEach(t => { if (t.out > 0 && (t.cat === 'indie' || t.cat === 'other' || t.cat === 'dinners' || t.cat === 'cafe') && t.conf !== 'rule') (g[t.key] = g[t.key] || []).push(t); });
+    // only places that already look like food (by name or category code), or small-business card readers — never unknowns
+    T.forEach(t => { if (t.out > 0 && t.conf === 'guess' && (t.cat === 'cafe' || t.cat === 'dinners' || (t.cat === 'indie' && t.indie))) (g[t.key] = g[t.key] || []).push(t); });
     Object.values(g).forEach(list => {
       const wk = list.filter(t => isWeekday(t.d));
       if (wk.length >= 4 && median(wk.map(t => t.out)) <= 15) list.forEach(t => setCat(t, 'cafe', 'guess'));
@@ -419,6 +493,9 @@
     return home;
   }
 
+  const EVERYDAY = new Set(['cafe', 'dinners', 'takeaway', 'drinks', 'indie', 'clothes', 'online', 'gifts', 'care', 'hobbies', 'taxis', 'car', 'cash', 'other', 'people', 'homegarden', 'worktrips', 'travel']);
+  const BILLISH = new Set(['mortgage', 'bills', 'insurance', 'subs', 'health', 'charity', 'debt', 'interest', 'commute']);
+
   function recurringPass(T, spanMonths) {
     const groups = new Map();
     T.forEach(t => { if (t.out > 0 && !NOT_SPEND.has(t.cat) && !['cash', 'worktrips', 'travel', 'taxis'].includes(t.cat)) { if (!groups.has(t.key)) groups.set(t.key, []); groups.get(t.key).push(t); } });
@@ -426,18 +503,24 @@
     for (const [key, list] of groups) {
       list.sort((a, b) => (a.d < b.d ? -1 : 1));
       const amts = list.map(t => t.out), med = median(amts);
-      const ddso = list.some(t => /^(D\/D|DD|DDR|S\/O|SO|STO)$/i.test(t.type || ''));
+      const ddso = list.some(t => T_DD.test(t.type || '') || T_SO.test(t.type || ''));
       const months = new Set(list.map(t => t.d.slice(0, 7))).size;
       let freq = null;
-      if (list.length >= 2) {
+      const cat = mode(list.map(t => t.cat));
+      // Everyday spending (meals, shops, taxis…) is never "regular" unless it's set up as a direct debit/standing order
+      if (EVERYDAY.has(cat) && !ddso) continue;
+      // Bills-type things can be spotted from two payments; anything else needs three
+      const minCount = ddso || BILLISH.has(cat) ? 2 : 3;
+      if (list.length >= minCount) {
         const gaps = []; for (let i = 1; i < list.length; i++) gaps.push(daysBetween(list[i - 1].d, list[i].d));
         const g = median(gaps);
-        const similar = amts.every(a => Math.abs(a - med) <= Math.max(2, med * 0.2));
-        if (g >= 26 && g <= 35 && months >= 2 && (similar || ddso)) freq = 'monthly';
+        const similar = amts.every(a => Math.abs(a - med) <= Math.max(1, med * 0.1));
+        const steady = gaps.every(x => x >= 24 && x <= 37);
+        if (steady && months >= 2 && (similar || ddso)) freq = 'monthly';
         else if (g >= 6 && g <= 8 && list.length >= 4 && similar) freq = 'weekly';
-        else if (g >= 12 && g <= 16 && list.length >= 3 && similar) freq = 'fortnightly';
+        else if (g >= 13 && g <= 15 && list.length >= 3 && similar) freq = 'fortnightly';
         else if (ddso && months >= 2) freq = 'monthly';
-      } else if (ddso) freq = 'now and then';
+      }
       if (!freq) continue;
       const monthly = freq === 'monthly' ? med : freq === 'weekly' ? med * 52 / 12 : freq === 'fortnightly' ? med * 26 / 12 : med / Math.max(1, spanMonths);
       list.forEach(t => { t.recurring = freq; });
@@ -465,6 +548,8 @@
     commutePass(T);
     lunchPass(T);
     workPass(T, homeTowns);
+    // Lunch or coffee is never more than £40; anything bigger at a food place is a proper meal out
+    T.forEach(t => { if (t.cat === 'cafe' && t.out > 40) setCat(t, 'dinners', 'guess'); });
     T.forEach(t => {
       const o = overrides[t.id] || rules[t.key];
       if (o && CAT[o]) { t.cat = o; t.conf = 'user'; t.work = o === 'worktrips'; }
