@@ -90,7 +90,7 @@
     [/PURE ?GYM|THE GYM|DAVID LLOYD|NUFFIELD|VIRGIN ACTIVE|BANNATYNE|ANYTIME FITNESS|EVERYONE ACTIVE|BETTER GYM|GLL|FITNESS FIRST|THIRD SPACE|BARRY'?S|F45|ORANGETHEORY|SOULCYCLE|YOGA|PILATES|CLASSPASS|GYMPASS|PARKRUN|LEISURE|SPORTS CENTRE|SWIM|PHARMACY|CHEMIST|LLOYDS PHARMACY|WELL PHARMACY|DENTAL|DENTIST|ORTHODONT|OPTICIAN|SPECSAVERS|VISION EXPRESS|BOOTS OPTICIANS|PHYSIO|OSTEO|CHIRO|CLINIC|GP\b|DOCTOR|MEDICAL|NHS|PRESCRIPTION|HOLLAND (&|AND) BARRETT|MYPROTEIN|DECATHLON|SWEATY BETTY|SPORTS DIRECT|JD SPORTS|RUNNERS NEED|SIGMA SPORTS|WIGGLE|EVANS CYCLES|GO OUTDOORS|COTSWOLD OUTDOOR|MOUNTAIN WAREHOUSE/, 'health'],
     [/H ?& ?M|ZARA|UNIQLO|PRIMARK|NEXT\b|NEXT RETAIL|RIVER ISLAND|NEW LOOK|TOPSHOP|TOPMAN|ASOS|BOOHOO|PRETTYLITTLETHING|SHEIN|MANGO|COS\b|ARKET|& OTHER STORIES|OTHER STORIES|WEEKDAY|MONKI|URBAN OUTFITTERS|ANTHROPOLOGIE|FREE PEOPLE|WHISTLES|REISS|HOBBS|JIGSAW|L\.?K\.? ?BENNETT|KAREN MILLEN|PHASE EIGHT|MONSOON|WHITE STUFF|FAT ?FACE|SEASALT|JOULES|BODEN|TOAST\b|ME ?\+ ?EM|MINT VELVET|HUSH|SUPERDRY|JACK WILLS|GAP\b|LEVI|DR MARTENS|CLARKS|SCHUH|OFFICE SHOES|KURT GEIGER|DUNE|RUSSELL (&|AND) BROMLEY|SKECHERS|VANS|CONVERSE|NIKE|ADIDAS|NEW BALANCE|PUMA|LULULEMON|GYMSHARK|TK ?MAXX|TKMAXX|HOMESENSE|SELFRIDGES|HARVEY NICHOLS|LIBERTY|HARRODS|FENWICK|HOUSE OF FRASER|FLANNELS|END CLOTHING|MR PORTER|NET-?A-?PORTER|FARFETCH|VINTED|DEPOP|ZALANDO|MATCHES|MARKS (&|AND) SPENCER|M ?& ?S\b|JOHN LEWIS FASHION|SEASALT/, 'clothes'],
     [/JOHN LEWIS|IKEA|DUNELM|HABITAT|HEALS|MADE\.COM|WAYFAIR|LA REDOUTE|OLIVER BONAS|THE WHITE COMPANY|LAKELAND|ROBERT DYAS|WILKO|B ?& ?Q|B&Q|WICKES|HOMEBASE|SCREWFIX|TOOLSTATION|TRAVIS PERKINS|JEWSON|DULUX|FARROW|GARDEN CENT|DOBBIES|HILLIER|WYEVALE|NOTCUTTS|SQUIRES|THOMPSON (&|AND) MORGAN|CROCUS|PETS AT HOME|JOLLYES|ZOOPLUS|BELLA (&|AND) DUKE|TAILS\.COM|BUTTERNUT BOX|LILY'?S KITCHEN|VETS|VETERINARY|ARGOS|CURRYS|AO\.COM|RICHER SOUNDS|MAPLIN|THE RANGE|B ?& ?M\b|HOME BARGAINS|POUNDLAND|POUNDSTRETCHER|SAVERS|WHSMITH|WH SMITH|RYMAN|HOBBYCRAFT|CLAS OHLSON|SOAK\.COM|NATURAL BED|EMMA MATTRESS|SIMBA|EVE SLEEP|SILENTNIGHT|DREAMS|BENSONS|SOFOLOGY|DFS|SCS\b|LOAF|SWOON|COX (&|AND) COX|ANTHROPOLOGIE HOME|CULT FURNITURE|NKUKU|DOWSING|NEPTUNE|SOFA/, 'homegarden'],
-    [/AMAZON|AMZN|AMZ\b|EBAY|ETSY|NOTONTHEHIGHSTREET|PAYPAL|KLARNA ONLINE|TEMU|ALIEXPRESS|WISH\.COM|VERY\.CO|LITTLEWOODS|ASOS\.COM|APPLE STORE|APPLE ONLINE|GOOGLE STORE|SAMSUNG|DYSON|SCAN COMPUTERS|OVERCLOCKERS|BACK MARKET|MUSIC MAGPIE|CEX\b|GAME\b|SMYTHS|THE ENTERTAINER|LEGO|HAMLEYS|BUY IT|ONLINE/, 'online'],
+    [/AMAZON|AMZN|AMZ\b|EBAY|ETSY|NOTONTHEHIGHSTREET|PAYPAL|KLARNA ONLINE|TEMU|ALIEXPRESS|WISH\.COM|VERY\.CO|LITTLEWOODS|ASOS\.COM|APPLE STORE|APPLE ONLINE|GOOGLE STORE|SAMSUNG|DYSON|SCAN COMPUTERS|OVERCLOCKERS|BACK MARKET|MUSIC MAGPIE|CEX\b|GAME\b|SMYTHS|THE ENTERTAINER|LEGO|HAMLEYS|BUY IT/, 'online'],
     [/WATERSTONES|FOYLES|BLACKWELLS|BOOKSHOP|WORDERY|HIVE\.CO|ABEBOOKS|WORLD OF BOOKS|CINEMA|CINEWORLD|ODEON|VUE\b|CURZON|PICTUREHOUSE|EVERYMAN|SHOWCASE|TICKETMASTER|SEETICKETS|SEE TICKETS|EVENTBRITE|DICE\.FM|\bDICE\b|SKIDDLE|AXS|GIGANTIC|TICKETWEB|LIVE NATION|ATG TICKETS|LONDON THEATRE|NATIONAL THEATRE|BARBICAN|SOUTHBANK|ROYAL ALBERT|O2 ARENA|THEATRE|MUSEUM|GALLERY|TATE|V ?& ?A|NATIONAL TRUST|ENGLISH HERITAGE|HISTORIC|RHS|ZOO|AQUARIUM|BOWLING|ESCAPE ROOM|GOLF|CLIMB|TENNIS|PADEL|PLAYTOMIC|MATCHI|CLUBSPARK|FESTIVAL|STEAM GAMES|GAMESTOP/, 'hobbies'],
     [/MOONPIG|FUNKY PIGEON|CARD FACTORY|CLINTONS|PAPERCHASE|SCRIBBLER|INTERFLORA|BLOOM ?& ?WILD|BLOOMON|PATCH PLANTS|FLORIST|FLOWERS|HOTEL CHOCOLAT|THORNTONS|LINDT|CHARBONNEL|NOT ON THE HIGH STREET|PRESENTS|GIFT/, 'gifts'],
     [/JUSTGIVING|JUST GIVING|GOFUNDME|CHARITY|CHARITIES|OXFAM|BRITISH RED CROSS|RED CROSS|CANCER RESEARCH|MACMILLAN|MARIE CURIE|BRITISH HEART|RNLI|RSPCA|RSPB|DOGS TRUST|BATTERSEA|CATS PROTECTION|SAMARITANS|MIND\b|SHELTER|CRISIS|SAVE THE CHILDREN|UNICEF|NSPCC|BARNARDO|WATERAID|ACTIONAID|AMNESTY|GREENPEACE|WWF|FRIENDS OF THE EARTH|AGE UK|ALZHEIMER|DONATION|HOSPICE/, 'charity'],
@@ -135,6 +135,10 @@
 
   // Wording banks add around the merchant name: "CARD PAYMENT TO TESCO ON 12/03", "))) PRET A MANGER", "TESCO STORES CD 1234"
   const PREFIXES = [
+    [/^(AUTOMATED CREDIT|BANK GIRO CREDIT|BGC)\s+/i, "BAC"],
+    [/^(ON-?LINE TRANSACTION|ONLINE BANKING|INTERNET BANKING|MOBILE BANKING)\s+/i, "TRANSFER"],
+    [/^(DEBIT CARD TRANSACTION|CARD TRANSACTION)(\s+\d{4})?(\s+\d{2}[A-Z]{3}\d{2})?\s+/i, ""],
+    [/^(CASH WITHDRAWAL|CASH MACHINE|ATM WITHDRAWAL)\s+/i, "CASH"],
     [/^(CARD PAYMENT( TO)?|CARD PURCHASE|DEBIT CARD (PAYMENT|PURCHASE)?|CONTACTLESS( PAYMENT)?|POS( PURCHASE)?|PURCHASE|VIS|DEB|CLP|APPLE PAY|GOOGLE PAY|\){2,3})\s+/i, ''],
     [/^(DIRECT DEBIT( PAYMENT)?( TO)?|DD)\s+/i, 'DIRECT DEBIT'],
     [/^(STANDING ORDER( TO)?|S\/O)\s+/i, "STANDING ORDER"],
@@ -291,7 +295,7 @@
     merch = merch.replace(SUFFIXES, '').trim() || merch;
     const indie = INDIE_PROC.test(merch);
     merch = merch.replace(PROC, '');
-    merch = merch.replace(/\s\b(REF|REFERENCE|FP|BGC|DDR)\b[\s:.].*$/i, '').replace(/\s+\d{2}\/\d{2}\/\d{2,4}.*$/, '');
+    merch = merch.replace(/\s\b(REF|REFERENCE|FP|BGC|DDR|SWP)\b([\s:.].*)?$/i, '').replace(/\s+\d{2}\/\d{2}\/\d{2,4}.*$/, '');
     let display = merch.replace(/\*\s*[A-Z0-9]{4,}\b/gi, '').replace(/\b[A-Z]*\d[A-Z\d]{3,}\b/gi, '')
       .replace(/\s+\d+\s*$/, '').replace(/\s*\*\s*$/, '').replace(/\s{2,}/g, ' ').trim() || merch || s;
     town = town.replace(/\s+[A-Z]{2,3}$/i, t => (/^\s+(GB|GBR|UK|NL|IE|US|PT|FR|ES|DE|IT|LU|SE|BE|DK|NO|CH|AT)$/i.test(t) ? '' : t))
@@ -393,6 +397,11 @@
     // Monzo Flex works like a credit card: the purchase is counted where it happened, and moving it to Flex
     // or paying instalments is just money moving between your own accounts
     if (/^FLEX$/.test(ty)) return setCat(t, 'transfer', 'rule');
+    // Paying yourself (e.g. RBS → your own Monzo) is money moving between your own accounts
+    if (t.holder) {
+      const names = t.holder.split(' ').filter(w => w.length > 1);
+      if (names.length >= 2 && names.every(n => new RegExp('\\b' + n + '\\b').test(U)) && !T_CARD.test(ty)) return setCat(t, 'transfer', 'rule');
+    }
     if (/OVERDRAFT/.test(ty) || /OVERDRAFT (FEE|CHARGE|INTEREST)/.test(U)) return setCat(t, 'interest', 'rule');
     if (/^(SAVINGS|SAVINGS_INVESTMENTS|INVESTMENTS)$/i.test(t.bankCat || '')) return setCat(t, t.out > 0 ? 'savings' : 'transfer', 'rule');
     if (t.out > 0 && /^MONZO_PAID$/.test(ty)) return setCat(t, 'subs', 'rule');
@@ -538,7 +547,7 @@
       const lag = t.td ? daysBetween(t.td, t.d) : -1;
       return Object.assign({}, t, {
         d: lag >= 0 && lag <= 10 ? t.td : t.d,
-        out: f.flip ? -t.o : t.o, kind: f.kind, acct: f.label,
+        out: f.flip ? -t.o : t.o, kind: f.kind, acct: f.label, holder: f.holder || '',
         cat: null, conf: 'none', hotel: false, rail: false, work: false, recurring: null, paired: null, refund: false
       });
     });
@@ -547,23 +556,46 @@
     const homeTowns = findHomeTowns(T);
     commutePass(T);
     lunchPass(T);
-    workPass(T, homeTowns);
     // Lunch or coffee is never more than £40; anything bigger at a food place is a proper meal out
     T.forEach(t => { if (t.cat === 'cafe' && t.out > 40) setCat(t, 'dinners', 'guess'); });
-    T.forEach(t => {
-      const o = overrides[t.id] || rules[t.key];
-      if (o && CAT[o]) { t.cat = o; t.conf = 'user'; t.work = o === 'worktrips'; }
-    });
     T.sort((a, b) => (a.d < b.d ? 1 : a.d > b.d ? -1 : 0));
     const dates = T.filter(t => t.cat !== 'transfer').map(t => t.d).sort();
     const first = dates[0], last = dates[dates.length - 1];
     const spanDays = first ? daysBetween(first, last) + 1 : 0;
     const months = Math.max(1, spanDays / 30.44);
+    // Regular payments are spotted on the detailed sorting, before it's folded into the 8 categories
     const regs = recurringPass(T, months);
+    regs.forEach(r => { r.fine = r.cat; r.cat = TOP[r.cat] || 'other'; });
+    T.forEach(t => {
+      t.fine = t.cat; t.cat = TOP[t.cat] || 'other';
+      const o = overrides[t.id] || rules[t.key];
+      // old saved choices may use the detailed names; anything else is one of the person's own categories
+      const top = o ? (TOP[o] && !TOP_CAT[o] ? TOP[o] : o) : null;
+      if (top) { t.cat = top; t.conf = 'user'; }
+    });
     return { T, regs, first, last, spanDays, months, homeTowns };
   }
 
-  const api = { CATS, CAT, GROUPS, NOT_SPEND, readFile, derive, parseCSV, detectColumns, parseDate, parseAmount, cleanDesc, median, dow, addDays, daysBetween, toDate };
+  // What people see: 8 plain categories. The detailed sorting above folds into these.
+  const TOP_CATS = [
+    ['home', 'Home & bills'], ['groceries', 'Groceries'], ['eating', 'Eating & drinking out'], ['transport', 'Transport & travel'],
+    ['shopping', 'Shopping & personal'], ['subs', 'Subscriptions'], ['debt', 'Debt & savings'], ['other', 'Other'],
+    ['transfer', 'Between your accounts'], ['income', 'Money in']
+  ].map(([id, name]) => ({ id, name }));
+  const TOP = {
+    mortgage: 'home', bills: 'home', insurance: 'home', homegarden: 'home',
+    shop: 'groceries',
+    cafe: 'eating', dinners: 'eating', takeaway: 'eating', drinks: 'eating',
+    commute: 'transport', car: 'transport', taxis: 'transport', travel: 'transport', worktrips: 'transport',
+    indie: 'shopping', clothes: 'shopping', online: 'shopping', gifts: 'shopping', care: 'shopping', health: 'shopping', hobbies: 'shopping',
+    subs: 'subs', debt: 'debt', interest: 'debt', savings: 'debt',
+    charity: 'other', people: 'other', cash: 'other', other: 'other',
+    transfer: 'transfer', income: 'income'
+  };
+  const TOP_CAT = Object.fromEntries(TOP_CATS.map(c => [c.id, c]));
+  const TOP_NOT_SPEND = new Set(['transfer', 'income']);
+
+  const api = { CATS: TOP_CATS, CAT: TOP_CAT, TOP, NOT_SPEND: TOP_NOT_SPEND, FINE: CAT, GROUPS, readFile, derive, parseCSV, detectColumns, parseDate, parseAmount, cleanDesc, median, dow, addDays, daysBetween, toDate };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.Engine = api;
 })(typeof window !== 'undefined' ? window : globalThis);

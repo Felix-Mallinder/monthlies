@@ -252,6 +252,11 @@ select { font-size: 16px; padding: 10px; border-radius: 10px; border: 1px solid 
 .track .marker { position: absolute; top: -4px; bottom: -4px; width: 2px; margin-left: -1px; background: var(--ink); border-radius: 1px; }
 .manage { margin-top: 24px; }
 .empty { padding-top: 8px; }
+.plan-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+.plan-head h3 { margin: 0; }
+.name-input { flex: 1; font-size: 16px; padding: 9px 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+.icon-btn { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); font-size: 20px; line-height: 1; color: var(--ink-2); }
+.pill.new { border-style: dashed; color: var(--accent); }
 </style>
 </head>
 <body>
@@ -267,9 +272,10 @@ select { font-size: 16px; padding: 10px; border-radius: 10px; border: 1px solid 
 </nav>
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
-<input type="file" id="fileInput" multiple accept=".csv,.txt,.tsv,text/csv,text/plain,text/comma-separated-values,application/vnd.ms-excel,application/csv" hidden>
+<input type="file" id="fileInput" multiple accept=".csv,.pdf,application/pdf,.txt,.tsv,text/csv,text/plain,text/comma-separated-values,application/vnd.ms-excel,application/csv" hidden>
 <input type="file" id="backupInput" accept=".json,application/json" hidden>
 <script src="engine.js"></script>
+<script src="pdf-reader.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
